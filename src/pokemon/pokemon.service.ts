@@ -34,7 +34,6 @@ export class PokemonService {
     .select('-__v');
     ;
   }
-
   async findOne(term: string) {
     let pokemon: Pokemon;
     if (!isNaN(+term)) {
@@ -69,12 +68,11 @@ export class PokemonService {
   }
 
   async remove(_id: string) {
-     //const result =await this.pokemonModel.findByIdAndDelete(id);
-     const {deletedCount}= await this.pokemonModel.deleteOne({_id});
-     if (deletedCount==0){
+    const { deletedCount } = await this.pokemonModel.deleteOne({ _id });
+    if (deletedCount == 0) {
       throw new BadRequestException(`Pokemon no existe en la base de datos`);
-     }
-     return  ;
+    }
+    return;
   }
 
   private handleException(error: any) {
