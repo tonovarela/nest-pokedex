@@ -8,8 +8,6 @@ import { CommonModule } from './common/common.module';
 import { SeedModule } from './seed/seed.module';
 import { AppConfiguration } from './config/app.config';
 import { JoiValidationSchema } from './config/joi.validation';
-
-
 @Module({
   imports: [
     ConfigModule.forRoot({load:[AppConfiguration],validationSchema:JoiValidationSchema}),

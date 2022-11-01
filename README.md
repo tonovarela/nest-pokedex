@@ -4,19 +4,27 @@
 
 # Para iniciar el proyecto
 
-Tener el CLI de nest
+1. Tener el CLI de nest
 ```
 npm -i -g @nestjs/cli
 ```
-Levantar la base de datos
+2. Levantar la base de datos
 ```
  docker compose up -d
 
 ```
-Realiza la carga de la base de datos (Solo en desarrollo)
+3. Realiza la carga de la base de datos (Solo en desarrollo)
 ```
 http://localhost:3000/api/v2/seed
 ```
+
+4. Clonar el archivo ___.env.template__ a __.env___  y definir las variables 
+
+5. Ejecutar la aplicacion cpn el comando
+```
+npm run start:dev
+```
+
 
 ##Stack usado
 * MongoDB
