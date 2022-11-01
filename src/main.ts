@@ -12,8 +12,9 @@ async function bootstrap() {
    transformOptions:{
     enableImplicitConversion:true
    }
-
 }));
-  await app.listen(3000);
+
+  await app.listen(process.env.PORT);
+  console.log(`Server listening on port ${process.env.PORT}`);
 }
 bootstrap();

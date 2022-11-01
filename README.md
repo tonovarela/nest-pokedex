@@ -13,7 +13,6 @@ Levantar la base de datos
  docker compose up -d
 
 ```
-
 Realiza la carga de la base de datos (Solo en desarrollo)
 ```
 http://localhost:3000/api/v2/seed
